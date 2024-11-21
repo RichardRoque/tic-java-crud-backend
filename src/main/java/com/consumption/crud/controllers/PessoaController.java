@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/pessoas")
-@CrossOrigin("*")
-@AllArgsConstructor
+@RestController // diz ao spring que é um controlador
+@RequestMapping("/pessoas") //dizer o que quero acessar
+@CrossOrigin("*") //funcionar em qualquer aplicação ou cenario
+@AllArgsConstructor // injeta uma dependencia o spring faz manualmente
 public class PessoaController {
     private PessoaRepository pessoaRepository;
 
